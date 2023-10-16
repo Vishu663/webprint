@@ -1,0 +1,65 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f0ebff;
+  width: 345px;
+  height: 468px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.text {
+  color: #37179b;
+  text-align: center;
+  font-family: 'Manrope', sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.underline {
+  width: 61px;
+  height: 6px;
+  background: #37179b;
+  border-radius: 9px;
+}
+
+.inputs {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.input {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.secondline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Para {
+  align-items: center;
+  justify-content: center;
+}
