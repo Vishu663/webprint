@@ -18,10 +18,13 @@ export default function Login() {
   async function loginUser(ev) {
     ev.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3000/login", {
-        email,
-        password,
-      });
+      const response = await axios.post(
+        "https://webprint-backend.vercel.app/login",
+        {
+          email,
+          password,
+        }
+      );
       alert(`Login succesfull for ${response.data.name}`);
       if (response.data.name) {
         updateUser(response.data.name);

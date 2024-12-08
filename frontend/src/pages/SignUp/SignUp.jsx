@@ -18,11 +18,14 @@ export default function SignUp() {
   async function registerUser(ev) {
     ev.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3000/signup", {
-        email,
-        name,
-        password,
-      });
+      const response = await axios.post(
+        "https://webprint-backend.vercel.appsignup",
+        {
+          email,
+          name,
+          password,
+        }
+      );
       alert("Registration Successful. Now you can log in.");
       if (response.data) {
         console.log(response.data);
@@ -44,43 +47,43 @@ export default function SignUp() {
         </div>
         <form className="signup-fields" onSubmit={registerUser}>
           <div>
-          <div className="field">
+            <div className="field">
               <MdEmail className="input-icon" />
               <label>Email </label>
             </div>
-              <TextBox
-                inputName="email"
-                value={email}
-                handleChange={(e) => setEmail(e)}
-                type={"email"}
-                placeholder="Enter your Email ID here"
-              />
+            <TextBox
+              inputName="email"
+              value={email}
+              handleChange={(e) => setEmail(e)}
+              type={"email"}
+              placeholder="Enter your Email ID here"
+            />
           </div>
           <div>
-          <div className="field">
+            <div className="field">
               <FaUser className="input-icon" />
               <label>UserName</label>
             </div>
-              <TextBox
-                inputName="name"
-                value={name}
-                handleChange={(e) => setName(e)}
-                type={"text"}
-                placeholder="Enter your Username here"
-              />
+            <TextBox
+              inputName="name"
+              value={name}
+              handleChange={(e) => setName(e)}
+              type={"text"}
+              placeholder="Enter your Username here"
+            />
           </div>
           <div>
-          <div className="field">
+            <div className="field">
               <RiLockPasswordFill className="input-icon" />
               <label>Password</label>
             </div>
-              <TextBox
-                inputName="password"
-                value={password}
-                handleChange={(e) => setPassword(e)}
-                type={"password"}
-                placeholder="Enter your password here"
-              />
+            <TextBox
+              inputName="password"
+              value={password}
+              handleChange={(e) => setPassword(e)}
+              type={"password"}
+              placeholder="Enter your password here"
+            />
           </div>
           <Button
             type="submit"
