@@ -1,5 +1,6 @@
 .login-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -83,7 +84,7 @@
   font-family: "Manrope", sans-serif;
 }
 
-.seprator>div {
+.seprator > div {
   border-radius: 15px;
   width: 100%;
   background-color: #36179a;
@@ -92,7 +93,7 @@
 
 /* footer  */
 
-.login-footer>div:nth-child(2) {
+.login-footer > div:nth-child(2) {
   margin-top: 7px;
   display: flex;
   flex-direction: column;
@@ -100,7 +101,7 @@
   font-family: "Manrope", sans-serif;
 }
 
-.login-footer>div:nth-child(2) p {
+.login-footer > div:nth-child(2) p {
   font-size: 10px;
   text-align: justify;
   margin-top: 2px 0;

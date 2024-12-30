@@ -46,6 +46,9 @@ export default function Login() {
 
   return (
     <div className="login-container">
+      <p>Guest Login:</p>
+      <p>email: test@gmail.com</p>
+      <p>password: test123</p>
       <div className="login-content">
         <div className="login-head">
           <h1>Login</h1>
